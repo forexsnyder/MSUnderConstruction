@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Mission Support Incorporated — aerospace component overhaul, repair, and manufacturing." />
+  <title>Mission Support Incorporated | New Website Coming Soon</title>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%230b1f36'/%3E%3Cpath d='M10 41h44L32 18 22 30h10z' fill='%23e33b35'/%3E%3Cpath d='M14 47h36' stroke='%23fff' stroke-width='4'/%3E%3C/svg%3E" />
+  <style>
+    :root { --navy:#0b1f36; --navy-2:#102b49; --blue:#2c6fae; --red:#6b7280; --ink:#142536; --muted:#607080; --line:#d9e3ec; --paper:#f7fafc; }
+    * { box-sizing:border-box; }
+    body { margin:0; color:var(--ink); background:var(--paper); font-family: Arial, Helvetica, sans-serif; }
+    a { color:inherit; }
+    .page { min-height:100vh; display:flex; flex-direction:column; overflow:hidden; }
+    header { height:86px; background:#fff; border-bottom:1px solid var(--line); display:flex; align-items:center; justify-content:space-between; padding:0 clamp(24px, 6vw, 88px); position:relative; z-index:2; }
+    .brand { display:flex; align-items:center; text-decoration:none; }
+    .brand-logo { width:220px; height:auto; display:block; }
+    .status { font-size:12px; letter-spacing:.13em; color:var(--blue); font-weight:700; text-transform:uppercase; }
+    main { flex:1; position:relative; display:grid; place-items:center; padding:80px 24px 92px; background:linear-gradient(120deg, #f7fafc 0%, #edf4f9 58%, #e4eef6 100%); }
+    main:before { content:""; position:absolute; inset:0; opacity:.32; background-image:linear-gradient(30deg, transparent 49%, rgba(44,111,174,.09) 50%, transparent 51%), linear-gradient(150deg, transparent 49%, rgba(44,111,174,.09) 50%, transparent 51%); background-size:100px 100px; mask-image:linear-gradient(to right, transparent, #000 35%, #000 75%, transparent); }
+    .content { position:relative; width:min(1060px, 100%); display:grid; grid-template-columns:1.08fr .92fr; gap:clamp(36px, 7vw, 110px); align-items:center; }
+    .eyebrow { display:flex; align-items:center; gap:12px; color:var(--red); text-transform:uppercase; letter-spacing:.2em; font-size:12px; font-weight:700; margin-bottom:24px; }
+    .eyebrow:before { content:""; display:block; width:38px; height:2px; background:var(--red); }
+    h1 { color:var(--navy); font-size:clamp(42px, 6vw, 78px); letter-spacing:-.045em; line-height:.98; margin:0 0 24px; max-width:650px; }
+    h1 em { color:var(--blue); font-style:normal; }
+    .intro { max-width:580px; margin:0; font-size:18px; line-height:1.65; color:#526474; }
+    .rule { width:72px; height:4px; background:var(--red); margin:34px 0 28px; }
+    .contact-row { display:flex; flex-wrap:wrap; gap:12px; }
+    .contact { display:inline-flex; align-items:center; gap:10px; padding:13px 17px; border:1px solid #c8d7e4; background:#fff; border-radius:4px; text-decoration:none; font-size:15px; font-weight:700; color:var(--navy); transition:.2s ease; }
+    .contact:hover { border-color:var(--blue); transform:translateY(-2px); box-shadow:0 7px 20px rgba(11,31,54,.08); }
+    .contact svg { width:17px; height:17px; fill:var(--red); }
+    .panel { background:var(--navy); color:#fff; padding:38px; border-radius:4px; position:relative; box-shadow:18px 22px 0 rgba(44,111,174,.18); overflow:hidden; }
+    .panel:before { content:"MSI"; position:absolute; right:-17px; bottom:-28px; color:rgba(255,255,255,.05); font-size:140px; font-weight:900; letter-spacing:-.08em; }
+    .panel-top { display:flex; justify-content:space-between; align-items:center; border-bottom:1px solid rgba(255,255,255,.18); padding-bottom:20px; margin-bottom:28px; }
+    .panel-label { font-size:12px; letter-spacing:.16em; color:#a9c8e2; text-transform:uppercase; font-weight:700; }
+    .pulse { display:none; }
+    .panel h2 { font-size:26px; margin:0 0 15px; line-height:1.2; }
+    .panel p { color:#c6d5e3; line-height:1.65; margin:0 0 28px; font-size:16px; }
+    .facts { display:grid; gap:14px; position:relative; z-index:1; }
+    .fact { display:flex; gap:14px; align-items:flex-start; }
+    .fact strong { display:block; color:#fff; font-size:14px; margin-bottom:3px; }
+    .fact span { color:#a9c8e2; font-size:14px; line-height:1.4; }
+    .fact-icon { flex:0 0 26px; color:var(--red); font-size:17px; text-align:center; }
+    footer { background:var(--navy); color:#a9c0d4; min-height:72px; display:flex; align-items:center; justify-content:space-between; gap:20px; padding:20px clamp(24px, 6vw, 88px); font-size:12px; letter-spacing:.04em; }
+    footer strong { color:#fff; font-size:12px; }
+    @media (max-width:760px) { header { height:74px; padding:0 20px; } .status { display:none; } main { padding:60px 20px 76px; } .content { grid-template-columns:1fr; gap:58px; } h1 { font-size:clamp(46px, 13vw, 68px); } .intro { font-size:17px; } .panel { padding:28px; box-shadow:10px 13px 0 rgba(44,111,174,.18); } footer { align-items:flex-start; flex-direction:column; padding:22px 20px; } }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <header>
+      <a class="brand" href="mailto:MSI@missionsupport.us" aria-label="Mission Support Incorporated email">
+        <img class="brand-logo" src="assets/mission-support-logo-white.png" alt="Mission Support Incorporated" />
+      </a>
+      <div class="status">New site in development</div>
+    </header>
+    <main>
+      <div class="content">
+        <section>
+          <div class="eyebrow">A new mission is taking shape</div>
+          <h1>Built for the <em>mission.</em><br />Back soon.</h1>
+          <p class="intro">Our new website is under construction. Mission Support Incorporated continues to deliver high-quality aerospace component overhaul, repair, and manufacturing solutions for government and aviation partners.</p>
+          <div class="rule"></div>
+          <div class="contact-row">
+            <a class="contact" href="tel:+18017737900"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 10.8c1.6 3.1 3.5 5 6.6 6.6l2.2-2.2c.3-.3.7-.4 1.1-.2 1.2.4 2.4.7 3.7.7.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.2 21 3 13.8 3 5c0-.6.4-1 1-1h3.3c.6 0 1 .4 1 1 0 1.3.2 2.5.7 3.7.1.4 0 .8-.2 1.1l-2.2 2z"/></svg>801.773.7900</a>
+            <a class="contact" href="mailto:MSI@missionsupport.us"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 5h18v14H3V5zm9 7 7-5H5l7 5zm0 2L5 9v8h14V9l-7 5z"/></svg>MSI@missionsupport.us</a>
+          </div>
+        </section>
+        <aside class="panel">
+          <div class="panel-top"><span class="panel-label">Mission Support Incorporated</span><span class="pulse" aria-label="Site under construction"></span></div>
+          <h2>Keeping flight-critical work moving.</h2>
+          <p>Serving aerospace and defense partners since 1990 from our facility in Clearfield, Utah.</p>
+          <div class="facts">
+            <div class="fact"><span class="fact-icon">⌖</span><div><strong>Facility</strong><span>Building Z-15, Freeport Center<br />Clearfield, UT 84016-0135</span></div></div>
+            <div class="fact"><span class="fact-icon">◈</span><div><strong>Capabilities</strong><span>Overhaul · Repair · Manufacture<br />Airframe · Flight Controls · Landing Gear</span></div></div>
+            <div class="fact"><span class="fact-icon">✓</span><div><strong>Quality systems</strong><span>AS9100 &amp; ISO 9001:2015 certified</span></div></div>
+          </div>
+        </aside>
+      </div>
+    </main>
+    <footer><strong>MISSION SUPPORT INCORPORATED</strong><span>Fax: 801.773.1628 &nbsp;·&nbsp; Clearfield, Utah</span><span>© 2026 Mission Support Incorporated</span></footer>
+  </div>
+</body>
+</html>
